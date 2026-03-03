@@ -1,0 +1,30 @@
+/* 공통 common css */
+#wrap {
+    min-width: 320px;
+    margin: 0 auto;
+}
+#wrap * {transition: all 0.3s;}
+#wrap .container {min-width: 320px;}
+/* mobile desigh - .sponsor_btn */
+#wrap .container .sponsor_btn {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; gap: 10px;
+    align-items: center;
+    width: 164px; height: 41px;
+    border-radius: 37.5px;
+    background: linear-gradient(90deg, #fe9300,#ff7300);
+    transition: box-shadow 0.5s;
+}
+#wrap .container .sponsor_btn::after {
+    content:'>'; display: block;
+    color: #fff;
+    font-size: 0.75rem;
+    transition: transform 0.5s;
+}
+#wrap .container .sponsor_btn em {
+    color: #fff; font-weight: 500;
+}
+#wrap .container .sponsor_btn:hover {
+    box-shadow: 0 0 15px #fe9300;
+}
+#wrap .container .sponsor_btn:hover.sponsor_btn:after {transform: translateX(5px);}
