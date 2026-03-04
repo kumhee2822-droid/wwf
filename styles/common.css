@@ -6,6 +6,7 @@
 #wrap * {transition: all 0.3s;}
 #wrap .container {min-width: 320px;}
 /* mobile desigh - .sponsor_btn */
+#wrap .container .contents {max-width: 1250px; margin: 0 auto;} 
 #wrap .container .sponsor_btn {
     display: flex; flex-flow: row nowrap;
     justify-content: center; gap: 10px;

@@ -34,3 +34,71 @@
 #wrap .intro h1 span:nth-child(1) {}
 #wrap .intro h1 span:nth-child(2) {}
 #wrap .intro .sponsor_btn {}
+/* ====================2행 퀴즈 */
+#wrap .container {}
+#wrap .container .contents {}
+#wrap .quiz_bg {
+    background-image: url(../images/quiz_bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 70px;
+}
+#wrap .quiz_bg .quiz {
+    display: flex; flex-flow: column nowrap; /* t,d colum -> row */
+    gap: 50px;
+}
+#wrap .quiz_bg .quiz .quiz_list {}
+#wrap .quiz_bg .quiz .quiz_list > * {
+    margin: 0 0 16px;
+}
+#wrap .quiz_bg .quiz .quiz_list h1 {
+    font-size: 1.50rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: -0.01rem;
+    font-family: 'Noto sans KR', sans-serif;
+}
+#wrap .quiz_bg .quiz .quiz_list h2 {}
+#wrap .quiz_bg .quiz .quiz_list h2 span {
+    color: #fff;
+    display: block;
+    line-height: 1.7;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm {margin: 0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul {margin: 0 0 16px;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li {
+    margin-bottom: 8px;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:last-child {margin: 0;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input {display: none;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li input:checked + label {
+    background-image: url(../images/chk_on.svg);
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {
+    color: #fff;
+    line-height: 1.7;
+    font-size: 0.88rem;
+    background-image: url(../images/chk_off.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding-left: 47.75px;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li:hover label {color:#fe9300;}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm .quiz_btn {
+    width: 100%;
+    background-color: #050505;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50px;
+    line-height: 1.7;
+    transition: background-color 0.3s;
+}
+#wrap .quiz_bg .quiz .quiz_list #quiz_frm .quiz_btn:hover{background-color: #fe9300;}
+#wrap .quiz_bg .quiz .quiz_status {}
+#wrap .quiz_bg .quiz .quiz_status img {width: 100%;}
+#wrap .quiz_bg .quiz .quiz_status p {
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin: 20px 0 0;
+}
