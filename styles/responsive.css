@@ -7,11 +7,29 @@
 }
 @media screen and (min-width:860px) {
     #wrap .intro {padding: 300px 0 100px;}
+    #wrap .intro h1 span {
+        font-size: 3.13rem;
+    }
     #wrap .quiz_bg .quiz {align-items: center;}
     #wrap .quiz_bg .quiz .quiz_list h1 {font-size: 2.50rem;}
     #wrap .quiz_bg .quiz .quiz_list h2 span {font-size: 1.25rem; display: inline;}
     #wrap .quiz_bg .quiz .quiz_list #quiz_frm ul li label {font-size: 1.25rem;}
-    
+    /* ---------------------------------3~6행 공통 */
+    #wrap .container {padding: 200px 80px;}
+    #wrap .container .contents h1 {font-size: 2.5rem; }
+    #wrap .container .contents h1+p {font-size: 1.38rem; line-height: 1.2; margin: 40px 0;}
+    /* -------------------- */
+    #wrap .video_bg .video h1 {margin: 0 0 70px;}
+    #wrap .video_bg .video iframe {height: 484px;}
+    /* ------------------------------5행 */
+    #wrap .humanity_bg .humanity .list {flex-flow: row nowrap;}
+    #wrap .humanity_bg .humanity .list li {flex: 1;}
+    #wrap .humanity_bg .humanity .list li dl dt {font-size:2.69rem;}
+    #wrap .humanity_bg .humanity .list li .txt {height: 250px;}
+    #wrap .humanity_bg .humanity .list li .txt p {font-size:1rem;}
+    #wrap .info_bg {
+        padding: 100px 80px;
+    }
 }
 @media screen and (min-width:1024px) {
     #wrap .intro {
@@ -21,9 +39,6 @@
     #wrap .intro .logo {
         width: 32px;
         top: 30px; left: 36px;
-    }
-    #wrap .intro h1 span {
-        font-size: 3.13rem;
     }
     #wrap .container .sponsor_btn {
         width: 238px; height: 60px;
@@ -37,6 +52,53 @@
     #wrap .quiz_bg {padding: 150px 70px;}
     #wrap .quiz_bg .quiz .quiz_list h1 {margin-bottom: 56px; text-align: center;}
     #wrap .quiz_bg .quiz .quiz_list #quiz_frm .quiz_btn {margin-top: 37.8px; font-size: 1.25rem;}
+    /* ---------------------8행 */
+    #wrap .activity_bg .activity .details {
+        display: grid; gap: 20px;
+        grid-template-areas:
+        'public nature'
+        'corporation nature';
+        grid-template-columns: 1fr 1fr;
+    }
+    #wrap .activity_bg .activity .details li {
+        padding: 102px 0 31px 0 ;
+    }
+    #wrap .activity_bg .activity .details li .txt {
+        width: 60%;
+    }
+    #wrap .activity_bg .activity .details li:nth-child(3) {
+        position: relative;
+    }
+    #wrap .activity_bg .activity .details li:nth-child(3) .txt {
+        position: absolute;
+        bottom: 31px; left: 0;
+    }
+    #wrap .activity_bg .activity .details li .txt dt {
+        font-size: 2.13rem;
+    }
+    #wrap .activity_bg .activity .details li .txt dd {
+        font-size: 1.25rem;
+        line-height: 1.7;
+    }
+    #wrap .gift_bg .gift .gift_title {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: end; gap: 0;
+    }
+    #wrap .gift_bg .gift .gift_list {
+        margin: 70px 0;
+        grid-template-areas: 
+        'gift_1 gift_2'
+        'gift_3 gift_3';
+        gap: 22px 45px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #wrap .gift_bg .gift .gift_list li .gift_img {
+        height: 300px;
+    }
+    #wrap .gift_bg .gift {
+        text-align: end;
+    }
 }/* 1024~ */
 @media screen and (min-width:1250px) {
     #wrap .intro {
@@ -61,4 +123,24 @@
     #wrap .container .sponsor_btn em {
         font-size: 2rem;
     }
+    #wrap .container .contents h1 {font-size: 3.44rem;}
+    #wrap .container .contents h1+p {font-size: 2.13rem; font-weight: 600; line-height: 1.2; margin: 55px 0;}
+    #wrap .humanity_bg .humanity h1+p {font-size: 1.25rem; font-weight: 500;}
+    #wrap .gift_bg .gift .gift_list {
+        grid-template-areas: 
+        'gift_1 gift_2 gift_3';
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #wrap .gift_bg .gift {
+        text-align: center;
+    }
+    #wrap .gift_bg .gift .gift_list li p,
+    #wrap .gift_bg .gift span {font-size: 1.25rem;}
+    #wrap .info_bg dl dt {
+    font-size: 2.13rem; font-weight: 600;
+    line-height: 1.7;
+}
+    #wrap .info_bg dl dd {
+    font-size: 1.25rem;
+}
 }/* 1250~ */ 
